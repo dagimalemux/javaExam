@@ -1,22 +1,25 @@
 package chapter3;
 
-  class What{
-	  int sum;
-	  int sumOfNumbers(int...values) {
-		  
-		  for(int i =0; i<= values.length; i++) {
-			  sum+=i;
-		  }
-		  return sum;
-	  }
-	  
-  }
-
-public class MethodInClass {
-	public static void main(String[] args) {
-		What obSum = new What();
+class Ab{
+	int sum;
+	
+	int theSum(int...values) {
 		
-		System.out.println(obSum.sumOfNumbers(1,2,3));
-	  
+		for(int i = 0; i<=values.length;i++) {
+			sum+=i;
+		}
+		
+		return sum;
 	}
 }
+
+public class MethodInClass {
+	public static void main(String[] args){
+		
+		Ab oba = new Ab();
+		System.out.println(oba.theSum(1,2,3,4));
+		
+	}
+}
+
+
